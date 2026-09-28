@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CodeGPT_AcpAgentSettings">
+    <option name="enabledAgentIds">
+      <list>
+        <option value="gemini-cli" />
+        <option value="opencode" />
+        <option value="codex" />
+        <option value="cline" />
+        <option value="claude-code" />
+        <option value="cursor" />
+      </list>
+    </option>
+  </component>
+</project>

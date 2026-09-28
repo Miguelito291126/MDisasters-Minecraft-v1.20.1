@@ -1,0 +1,4 @@
+# Rutas de exclusión del proyecto
+/.gradle/
+/build/
+/build/classes/java/main/

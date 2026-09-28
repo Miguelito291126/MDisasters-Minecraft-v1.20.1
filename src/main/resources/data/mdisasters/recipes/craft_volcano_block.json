@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+            "sm#",
+            "###",
+            "###"
+  ],
+
+  "key": {
+    "s": {
+      "item": "minecraft:stone"
+    },
+    "m": {
+      "item": "minecraft:fire_charge"
+    },
+    "#": {
+      "item": "minecraft:magma_block"
+    }
+  },
+  "result":{
+    "item": "mdisasters:volcano_block"
+  }
+}

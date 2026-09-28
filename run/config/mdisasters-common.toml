@@ -1,0 +1,88 @@
+
+[tornado]
+	#Velocidad de desplazamiento del tornado
+	#Range: 0.0 ~ 10.0
+	speed = 0.15
+	#Radio de impacto del tornado
+	#Range: 1.0 ~ 100.0
+	radius = 6.0
+	#Duración en ticks (20 ticks = 1 seg)
+	#Range: 1 ~ 72000
+	duration = 600
+	#Altura del tornado
+	#Range: 5 ~ 150
+	height = 30
+	#Ancho del tornado
+	#Range: 1 ~ 150
+	width = 4
+
+[tsunami]
+	#Velocidad del tsunami
+	#Range: 0.0 ~ 10.0
+	speed = 0.35
+	#Ancho de la ola
+	#Range: 5.0 ~ 200.0
+	width = 80.0
+	#Altura de la ola
+	#Range: 1.0 ~ 50.0
+	height = 10.0
+	#Duración en ticks
+	#Range: 1 ~ 72000
+	duration = 600
+	#Grosor de la ola
+	#Range: 1 ~ 10
+	depth = 2
+
+[volcano]
+	#Velocidad de presión del volcán
+	#Range: 0.01 ~ 20.0
+	speed = 0.05
+
+[spawner]
+	#Probabilidad por jugador y tick; menor número significa más frecuente
+	#Range: 200 ~ 100000
+	chance = 12000
+	#Habilitar el spawner de desastres
+	enable_spawner = true
+
+[meteor]
+	#Velocidad de caída
+	#Range: 0.1 ~ 200.0
+	speed = 1.0
+	#Distancia de aparición sobre el objetivo
+	#Range: 5 ~ 500
+	distance = 80
+	#Potencia de la explosión
+	#Range: 0.0 ~ 500.0
+	explosion_power = 10.0
+	#Altura física del meteorito
+	#Range: 0.1 ~ 500.0
+	height = 1.5
+	#Anchura física del meteorito
+	#Range: 0.1 ~ 500.0
+	width = 1.5
+
+[earthquake]
+	#Magnitud del terremoto
+	#Range: 1.0 ~ 10.0
+	magnitude = 7.0
+	#Duración del terremoto
+	#Range: 20 ~ 72000
+	duration = 600
+	#Radio máximo del terremoto
+	#Range: 1 ~ 500
+	max_radius = 80
+
+[flood]
+	#Velocidad de expansión
+	#Range: 0.01 ~ 10.0
+	speed = 0.4
+	#Radio máximo de la inundación
+	#Range: 1.0 ~ 1000.0
+	max_radius = 100.0
+	#Altura máxima del agua
+	#Range: 1 ~ 50
+	height = 4
+	#Permite expansión indefinida
+	infinite_expansion = false
+

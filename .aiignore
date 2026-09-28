@@ -1,0 +1,7 @@
+.gradle/
+.proxyai/
+.explyt/
+.aiassistant/
+build/
+target/
+.idea/

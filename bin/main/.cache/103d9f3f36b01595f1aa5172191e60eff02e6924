@@ -1,0 +1,6 @@
+// 1.20.1	2026-09-19T12:40:29.3534004	Registries
+eb2f8a0a6d03b2932a21c7c3604826a1dbb24706 data/mdisasters/worldgen/biome/volcano_biome.json
+4884c3d24d1bb9bcb5f16ce57cfc8ac06e88ed8c data/mdisasters/worldgen/configured_feature/volcano.json
+40ee21f5cb30f2d2a51f6afc708b355e7f535acb data/mdisasters/worldgen/configured_feature/volcano_surface.json
+b2b4a5dc863e6d08a77a395787aa7212feaf18af data/mdisasters/worldgen/placed_feature/volcano.json
+f93b7d9f8e16112f4f5afa365fe82bf653fd9f1a data/mdisasters/worldgen/placed_feature/volcano_surface.json

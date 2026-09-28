@@ -1,0 +1,11 @@
+{
+    "checkpointId": "0cda4028-0060-478e-9efc-18fb7469c9db",
+    "createdAt": "2026-09-04T15:46:02.346838400Z",
+    "nodePath": "tombstone",
+    "lastOutput": null,
+    "messageHistory": [],
+    "version": 17,
+    "properties": {
+        "tombstone": true
+    }
+}

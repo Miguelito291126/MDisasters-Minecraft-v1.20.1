@@ -1,0 +1,22 @@
+{
+  "earthquake_sound": {
+    "category": "weather",
+    "subtitle": "sound.mdisasters.earthquake",
+    "sounds": [
+      {
+        "name": "mdisasters:earthquake_sound",
+        "stream": true
+      }
+    ]
+  },
+  "tornado_sound": {
+    "category": "weather",
+    "subtitle": "sound.mdisasters.tornado",
+    "sounds": [
+      {
+        "name": "mdisasters:tornado_sound",
+        "stream": true
+      }
+    ]
+  }
+}

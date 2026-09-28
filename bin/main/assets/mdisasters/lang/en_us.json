@@ -1,0 +1,12 @@
+{
+  "creativetab.mdisasters_tab": "MDisasters Tab",
+
+  "item.mdisasters.meteors_spawn": "Meteor Item",
+  "item.mdisasters.tornado_spawn": "Tornado Spawner",
+  "item.mdisasters.tsunami_spawn": "Tsunami Bucket",
+  "block.mdisasters.volcano_block": "Volcano Block",
+  "item.mdisasters.volcano_spawn": "Volcano Spawn",
+  "item.mdisasters.earthquake_spawn": "Earthquake Spawn",
+  "item.mdisasters.flood_spawn": "Flood Spawn",
+  "item.mdisasters.lava_tsunami_spawn": "Lava Tsunami Bucket"
+}
