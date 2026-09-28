@@ -1,4 +1,9 @@
-# Rutas de exclusión del proyecto
-/.gradle/
+.gradle/
+.idea/
+.eclipse/
+.github/
+.project/
+.settings/
+.vscode/
 /build/
 /build/classes/java/main/
