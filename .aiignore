@@ -1,7 +1,7 @@
 .gradle/
-.proxyai/
-.explyt/
-.aiassistant/
-build/
-target/
 .idea/
+.eclipse/
+.github/
+.project/
+.settings/
+.vscode/

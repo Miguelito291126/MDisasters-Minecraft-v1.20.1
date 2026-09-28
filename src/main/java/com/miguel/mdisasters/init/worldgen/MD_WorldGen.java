@@ -48,37 +48,38 @@ public final class MD_WorldGen {
         Holder<ConfiguredFeature<?, ?>> volcano_configured = configuredFeatures.getOrThrow(VOLCANO_CONFIGURED);
         Holder<ConfiguredFeature<?, ?>> volcanoSurface_configured = configuredFeatures.getOrThrow(VOLCANO_SURFACE_CONFIGURED);
 
+        // Volcano en terreno sólido (no en agua) - altura más alta para asegurar superficie sólida
         context.register(
                 VOLCANO_PLACED,
                 new PlacedFeature(
-                        volcano_configured, // Holder de ConfiguredFeature
+                        volcano_configured,
                         List.of(
                                 RarityFilter.onAverageOnceEvery(32),
                                 CountPlacement.of(1),
                                 InSquarePlacement.spread(),
-                                HeightmapPlacement.onHeightmap(Heightmap.Types.WORLD_SURFACE_WG),
-                                BiomeFilter.biome() // Aplica a todos los biomas
+                                HeightmapPlacement.heightmap(Heightmap.Types.WORLD_SURFACE_WG, 64) // Altura más alta para evitar agua
                         )
                 )
         );
 
+        // Volcano surface en terreno sólido también
         context.register(
                 VOLCANO_SURFACE_PLACED,
                 new PlacedFeature(
                         volcanoSurface_configured,
                         List.of(
                                 CountPlacement.of(1),
-                                HeightmapPlacement.onHeightmap(Heightmap.Types.WORLD_SURFACE_WG)
+                                HeightmapPlacement.heightmap(Heightmap.Types.WORLD_SURFACE_WG, 64) // Altura más alta para evitar agua
                         )
                 )
         );
 
     }
+    
     public static void bootstrapConfigured(BootstapContext<ConfiguredFeature<?, ?>> context) {
         context.register(
                 VOLCANO_CONFIGURED,
                 new ConfiguredFeature(VOLCANO.get(), new NoneFeatureConfiguration())
-
         );
 
 
@@ -89,4 +90,3 @@ public final class MD_WorldGen {
 
     }
 }
-
