@@ -20,7 +20,6 @@ import net.minecraft.world.level.levelgen.placement.InSquarePlacement;
 import net.minecraft.world.level.levelgen.placement.HeightmapPlacement;
 import net.minecraft.world.level.levelgen.placement.RarityFilter;
 
-
 import java.util.List;
 
 import static com.miguel.mdisasters.init.worldgen.MD_Features.VOLCANO;
@@ -48,7 +47,7 @@ public final class MD_WorldGen {
         Holder<ConfiguredFeature<?, ?>> volcano_configured = configuredFeatures.getOrThrow(VOLCANO_CONFIGURED);
         Holder<ConfiguredFeature<?, ?>> volcanoSurface_configured = configuredFeatures.getOrThrow(VOLCANO_SURFACE_CONFIGURED);
 
-        // Volcano en terreno sólido (no en agua) - altura más alta para asegurar superficie sólida
+        // Volcano en terreno sólido (no en agua) - altura por defecto para asegurar superficie sólida
         context.register(
                 VOLCANO_PLACED,
                 new PlacedFeature(
@@ -57,7 +56,7 @@ public final class MD_WorldGen {
                                 RarityFilter.onAverageOnceEvery(32),
                                 CountPlacement.of(1),
                                 InSquarePlacement.spread(),
-                                HeightmapPlacement.heightmap(Heightmap.Types.WORLD_SURFACE_WG, 64) // Altura más alta para evitar agua
+                                HeightmapPlacement.onHeightmap(Heightmap.Types.WORLD_SURFACE_WG) // ✅ API correcta - altura por defecto (64 bloques)
                         )
                 )
         );
@@ -69,13 +68,13 @@ public final class MD_WorldGen {
                         volcanoSurface_configured,
                         List.of(
                                 CountPlacement.of(1),
-                                HeightmapPlacement.heightmap(Heightmap.Types.WORLD_SURFACE_WG, 64) // Altura más alta para evitar agua
+                                HeightmapPlacement.onHeightmap(Heightmap.Types.WORLD_SURFACE_WG) // ✅ API correcta - altura por defecto (64 bloques)
                         )
                 )
         );
 
     }
-    
+
     public static void bootstrapConfigured(BootstapContext<ConfiguredFeature<?, ?>> context) {
         context.register(
                 VOLCANO_CONFIGURED,
