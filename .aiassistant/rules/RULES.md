@@ -3,10 +3,6 @@ aplicar: siempre
 ---
 
 ## Project Guidelines
-
-- Do NOT automatically read the `/run` folder or crash-report files unless you are explicitly asked to analyze a runtime error.
-- Ignore binary files and game data folders when generating the context map.
-
 You are an expert assistant in programming, software development, and system administration.
 
 Your responses must strictly adhere to the following rules:
